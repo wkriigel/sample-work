@@ -2,7 +2,7 @@
 :root {
     --vmargin: 0;
     --border-width: 1px;
-    --primary01: #a112e4;
+    --primary01: #bd32fd;
     --primary02: #d53a9dff;
     --theme00: hsl(286, 100%, 30%);
     --theme01: hsl(286, 100%, 17%);
@@ -173,14 +173,11 @@ li.background {
 .sophos .underline {
     border-image-source: linear-gradient(to left, #005bc8, #00bbff, #005bc8);
 }
-body:has(#light-mode:not(:checked)) .sophos .background {
+.sophos .background {
     background: radial-gradient(ellipse at bottom, #005bc809, #00bbff09), radial-gradient(ellipse at bottom, #00bbff09, #005bc809);
 }
-.sophos .background {
-    background: #eaedf0;
-}
-.sophos li.background {
-    background: #005bc815;
+body:has(#light-mode:not(:checked)) .sophos li.background {
+    background: #005bc840;
 }
 body:has(#light-mode:checked) .sophos li.background {
     color: #005bc8;
@@ -196,8 +193,8 @@ body:has(#light-mode:not(:checked)) .sophos .dashed {
 .zibasec .background {
     background: radial-gradient(ellipse at bottom, #00e0ac09, #25fac909), radial-gradient(ellipse at bottom, #25fac909, #00e0ac09);
 }
-.zibasec li.background {
-    background: #00e0ac15;
+body:has(#light-mode:not(:checked)) .zibasec li.background {
+    background: #00e0ac30;
 }
 body:has(#light-mode:checked) .zibasec li.background {
     color: #007157;
@@ -211,17 +208,17 @@ body:has(#light-mode:not(:checked)) .zibasec .dashed {
     border-image-source: linear-gradient(to left, #eaaa00, #F9F6E5, #eaaa00);
 }
 .gtri .background {
-    background: radial-gradient(ellipse at bottom, #eaaa0009, #F9F6E509), radial-gradient(ellipse at bottom, #F9F6E509, #eaaa0009);
+    background: radial-gradient(ellipse at bottom, #eaaa0011, #F9F6E511), radial-gradient(ellipse at bottom, #F9F6E511, #eaaa0011);
 }
 body:has(#light-mode:not(:checked)) .gtri .block,
 body:has(#light-mode:not(:checked)) .gtri .dashed {
     border-color: #a77f11;
 }
-.gtri li.background {
-    background: #eaaa0015;
+body:has(#light-mode:not(:checked)) .gtri li.background {
+    background: #eaaa0018;
 }
 body:has(#light-mode:checked) .gtri li.background {
-    color: #886300;
+    color: #796122;
 }
 /* FONT SIZE */
 html {
