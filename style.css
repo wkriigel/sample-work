@@ -346,6 +346,9 @@ img.full {
 .challenge > div {
     margin-top: 2rem;
 }
+.contact h3 {
+    margin: -1rem 0 1rem;
+}
 .tags ul {
     padding: 0;
     text-align: center;
@@ -573,6 +576,13 @@ i.gg-comment, i.gg-moon {
         width: 80vw;
     }
 }
+@media only screen and (max-width : 845px) {
+    h2,
+    h3,
+    h4 {
+        font-size: 1.25rem;
+    }
+}
 @media only screen and (max-width : 445px) {
     h1 {
         font-size: 1.5rem;
@@ -584,6 +594,9 @@ i.gg-comment, i.gg-moon {
     h3,
     h4 {
         font-size: 1.25rem;
+    }
+    .contact h3 {
+        margin: 0 0 1rem;
     }
     .block {
         padding: 1.5rem 1rem;
@@ -598,6 +611,7 @@ i.gg-comment, i.gg-moon {
     .org {
         width: 1rem;
         height: 1rem;
+        margin-top: 0.25rem;
     }
     .heading .underline {
         margin-left: 0.25rem;
