@@ -77,17 +77,13 @@ a:hover {
          background: linear-gradient(0deg, var(--theme-faded03) 0%, var(--theme10) 70%);
 }
 
-strong,
+c, strong,
 h1,
 h2,
 h3,
 h4 {
     color: var(--text01);
-    text-shadow: 0 0 1vmin var(--theme00), 0.1vmin 0.1vmin 1vmin var(--theme00),
-     0.2vmin 0.2vmin 1.5vmin var(--theme00), 0.3vmin 0.3vmin 2vmin var(--theme00),
-      0.4vmin 0.4vmin 2.5vmin var(--theme00), 0.5vmin 0.5vmin 2vmin var(--theme00),
-       0.6vmin 0.6vmin 1.5vmin var(--theme00), 0.7vmin 0.7vmin 1vmin var(--theme00),
-        0.8vmin 0.8vmin 0.5vmin var(--theme00);
+    text-shadow: 0 0 1px var(--theme00), 0 0 2px var(--theme01), 0.1vmin 0.1vmin 1vmin var(--theme02);
 }
 .text-center {
     text-align: center;
