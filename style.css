@@ -349,6 +349,9 @@ img.full {
 .contact h3 {
     margin: -1rem 0 1rem;
 }
+#main .section:last-of-type {
+    padding-bottom: 4rem;
+}
 .tags ul {
     padding: 0;
     text-align: center;
