@@ -83,19 +83,11 @@ h2,
 h3,
 h4 {
     color: var(--text01);
-}
-h1 {
     text-shadow: 0 0 1vmin var(--theme01), 0.1vmin 0.1vmin 1vmin var(--theme02),
-     0.2vmin 0.2vmin 1.5vmin var(--theme-faded01), 0.3vmin 0.3vmin 2vmin var(--theme-faded02),
-      0.4vmin 0.4vmin 2.5vmin var(--theme-faded01), 0.5vmin 0.5vmin 2vmin var(--theme-faded02),
-       0.6vmin 0.6vmin 1.5vmin var(---theme-faded01), 0.7vmin 0.7vmin 1vmin var(--theme-faded028),
-        0.8vmin 0.8vmin 0.5vmin var(--theme-faded01);
-}
-h4 {
-    text-shadow: 0.02vmin 0.02vmin 1.5vmin var(--text03), 0.03vmin 0.03vmin 2vmin var(--text04);
-}
-p {
-    text-shadow: 0.02vmin 0.02vmin 1.5vmin var(--text03), 0.03vmin 0.03vmin 2vmin var(--text04);
+     0.2vmin 0.2vmin 1.5vmin var(--text01), 0.3vmin 0.3vmin 2vmin var(--text02),
+      0.4vmin 0.4vmin 2.5vmin var(--text01), 0.5vmin 0.5vmin 2vmin var(--text02),
+       0.6vmin 0.6vmin 1.5vmin var(--text01), 0.7vmin 0.7vmin 1vmin var(--text028),
+        0.8vmin 0.8vmin 0.5vmin var(--text01);
 }
 .text-center {
     text-align: center;
@@ -363,7 +355,7 @@ img.full {
     padding: 0.25rem 0.5rem;
     border-radius: 1px;
 }
-.space-between div {
+.space-between p {
     display: flex;
     width: 20rem;
     margin: 0 auto;
@@ -575,7 +567,7 @@ i.gg-comment, i.gg-moon {
     .challenge {
         border: none;
     }
-    .space-between div {
+    .space-between p {
         width: 80vw;
     }
 }
