@@ -147,8 +147,8 @@ body:has(#light-mode:checked) .challenge.block.shadow {
 }
 img.border {
     background-clip: content-box;
-    padding: 12px;
-    box-shadow: inset 12px 12px 0 0 #110215, inset -12px -12px 0 0 #110215;
+    padding: 0.6rem;
+    box-shadow: inset 0.6rem 0.6rem 0 0 #110215, inset -0.6rem -0.6rem 0 0 #110215;
 }
 .background {
     background: radial-gradient(ellipse at bottom, var(--theme02), var(--theme01)), radial-gradient(ellipse at bottom, var(--theme01), var(--theme02));
@@ -549,6 +549,10 @@ i.gg-comment, i.gg-moon {
     img.screenshot {
         width: calc(100vw - 6rem);
     }
+    img.border {
+        padding: 0.3rem;
+        box-shadow: inset 0.3rem 0.3rem 0 0 #110215, inset -0.3rem -0.3rem 0 0 #110215;
+    }
     img.full {
         width: calc(100vw - 4rem - 24px);
         margin-left: -1rem;
@@ -613,5 +617,9 @@ i.gg-comment, i.gg-moon {
     }
     .tags {
         padding-bottom: 1rem;
+    }
+    img.border {
+        padding: 0.125rem;
+        box-shadow: inset 0.125rem 0.125rem 0 0 #110215, inset -0.125rem -0.125rem 0 0 #110215;
     }
 }
