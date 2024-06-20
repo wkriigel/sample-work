@@ -636,7 +636,7 @@ nav li.active a {
         gap: 0.25rem;
     }
 }
-@media only screen and (max-height: 900px) {
+@media only screen and (max-width : 900px) and (orientation: landscape) {
     .frame {
         max-height: unset;
         width: 40% !important;
@@ -644,9 +644,29 @@ nav li.active a {
     .text {
         width: 50% !important;
     }
+    .block .owl-carousel .owl-nav button.owl-next,
+    .block .owl-carousel .owl-nav button.owl-prev {
+        top: 87%;
+    } 
+}
+@media only screen and (max-height: 900px) {
+
     .text p {
         font-size: 0.5rem;
     }
+    h2 {
+        margin: 0 0 1rem;
+    }
+    h3 {
+        margin: 0 0 1rem;
+    }
+    .text .tags {
+        margin: 0.5rem -0.4rem;
+    }
+    .text .tags ul li {
+        margin: 0.125rem;
+    }
+
     .block-content {
         margin: 0.5vh;
     }
