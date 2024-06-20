@@ -280,7 +280,7 @@ h3 {
 .button {
     position: relative;
     z-index: 0;
-    margin: 3rem 1.5rem;
+    margin: 3rem 1.5rem 0;
     padding: 0.75rem 2.5rem;
     width: 10.5rem;
     text-align: center;
@@ -505,6 +505,9 @@ nav li.active a {
     .owl-stage {
         margin-bottom: 1rem;
     }
+}
+
+@media only screen and (max-width : 1475px) and (orientation: portrait) {
     .slide {
         display: flex;
         flex-direction: column;
@@ -536,6 +539,12 @@ nav li.active a {
         max-width: 90vw;
         width: 100%;
     }
+    .hero .tags ul {
+        margin: 0.25rem 0;
+    }
+    .hero .button {
+        margin-top: 1.5rem;
+    }
     .owl-stage {
         margin-bottom: 0;
     }
@@ -545,6 +554,10 @@ nav li.active a {
     }   
     .block-content {
         max-width: 100%;
+    }
+    .hero {
+        margin-top: 1vh;
+        margin-left: 0rem;
     }
 }
 @media only screen and (max-height: 900px) {
@@ -623,6 +636,22 @@ nav li.active a {
         gap: 0.25rem;
     }
 }
+@media only screen and (max-height: 900px) {
+    .frame {
+        max-height: unset;
+        width: 40% !important;
+    }
+    .text {
+        width: 50% !important;
+    }
+    .text p {
+        font-size: 0.5rem;
+    }
+    .block-content {
+        margin: 0.5vh;
+    }
+}
+
 @media only screen and (max-width : 450px) {
     .block {
         border-left-width: 2px !important;
