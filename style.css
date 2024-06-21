@@ -48,11 +48,14 @@ nav {
 }
 .athiti-regular,
 .tags,
-
+h4,
 p {
     font-family: "Athiti", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+h4 {
+    font-weight: 500;
 }
 .tags ul {
     padding: 0;
@@ -183,6 +186,9 @@ section {
 .block#sophos .tags li {
     background-color: #002f79;
 }
+.block#sophos .tags li.software {
+    background-color: #002756;
+  }
 .block#zibasec {
     background-color: #31C48D;
     border-left: 1rem solid #F7C625;
@@ -190,6 +196,9 @@ section {
 .block#zibasec .tags li {
     background-color: #29a476;
 }
+.block#zibasec .tags li.software {
+    background-color: #2a936d;
+  }
 .block#georgiatech {
     background-color: #EAAA00;
     border-left: 1rem solid #545454;
@@ -197,6 +206,9 @@ section {
 .block#georgiatech .tags li {
     background-color: #c08d05;
 }
+.block#georgiatech .tags li.software {
+    background-color: #9c781b;
+  }
 .block#about {
     background-color: #2ACDDD;
     border-left: 1rem solid #D72466;
@@ -433,7 +445,7 @@ nav li.active a {
     .text {
         margin-top: 3.5rem;
     }
-    .text p {
+    .text p, h4 {
         font-size: 0.66rem;
     }
     .text .tags ul li {
@@ -495,7 +507,7 @@ nav li.active a {
         margin-top: 0;
         width: calc(80vw - 12rem);
     }
-    .text p {
+    .text p, h4 {
         font-size: 0.66rem;
     }
     .text .tags ul li {
@@ -582,7 +594,7 @@ nav li.active a {
     h3 {
         font-size: 0.9rem;
     }
-    .text p {
+    .text p, h4 {
         font-size: 0.66rem;
     }
     .text .tags ul li {
@@ -651,14 +663,15 @@ nav li.active a {
 }
 @media only screen and (max-height: 900px) {
 
-    .text p {
-        font-size: 0.5rem;
-    }
+
     h2 {
         margin: 0 0 1rem;
     }
     h3 {
         margin: 0 0 1rem;
+    }
+    .text p, h4 {
+        font-size: 0.5rem;
     }
     .text .tags {
         margin: 0.5rem -0.4rem;
