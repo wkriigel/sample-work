@@ -174,7 +174,11 @@ footer a:hover {
 }
 section {
     scroll-margin: -1vh;
-  }
+}
+.block .tags li.software {
+    display: none;
+    /* not using */
+}
 .block#summary {
     background-color: #2ACDDD;
     border-left: 1rem solid #D72466;
