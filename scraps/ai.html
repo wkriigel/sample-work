@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+            <li><a href="#section4">Section 4</a></li>
+            <li><a href="#section5">Section 5</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <section id="section1">
+            <div class="container">
+                <div class="image"></div>
+                <div class="text">
+                    <h2>Section 1 Heading</h2>
+                    <h3>Subheading 1</h3>
+                    <h4>Subheading 2</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel urna quis neque euismod dapibus.</p>
+                    <p>Nullam ac urna euismod, laoreet tortor sed, fringilla nulla. Aenean in felis id purus tincidunt consectetur.</p>
+                    <p>Integer aliquam est in dolor convallis, ac egestas odio auctor.</p>
+                    <ul class="tags">
+                        <li>Tag1</li>
+                        <li>Tag2</li>
+                        <li>Tag3</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="section2">
+            <div class="container">
+                <div class="image"></div>
+                <div class="text">
+                    <h2>Section 2 Heading</h2>
+                    <h3>Subheading 1</h3>
+                    <h4>Subheading 2</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel urna quis neque euismod dapibus.</p>
+                    <p>Nullam ac urna euismod, laoreet tortor sed, fringilla nulla. Aenean in felis id purus tincidunt consectetur.</p>
+                    <p>Integer aliquam est in dolor convallis, ac egestas odio auctor.</p>
+                    <ul class="tags">
+                        <li>Tag1</li>
+                        <li>Tag2</li>
+                        <li>Tag3</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="section3">
+            <div class="container">
+                <div class="image"></div>
+                <div class="text">
+                    <h2>Section 3 Heading</h2>
+                    <h3>Subheading 1</h3>
+                    <h4>Subheading 2</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel urna quis neque euismod dapibus.</p>
+                    <p>Nullam ac urna euismod, laoreet tortor sed, fringilla nulla. Aenean in felis id purus tincidunt consectetur.</p>
+                    <p>Integer aliquam est in dolor convallis, ac egestas odio auctor.</p>
+                    <ul class="tags">
+                        <li>Tag1</li>
+                        <li>Tag2</li>
+                        <li>Tag3</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="section4">
+            <div class="container">
+                <div class="image"></div>
+                <div class="text">
+                    <h2>Section 4 Heading</h2>
+                    <h3>Subheading 1</h3>
+                    <h4>Subheading 2</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel urna quis neque euismod dapibus.</p>
+                    <p>Nullam ac urna euismod, laoreet tortor sed, fringilla nulla. Aenean in felis id purus tincidunt consectetur.</p>
+                    <p>Integer aliquam est in dolor convallis, ac egestas odio auctor.</p>
+                    <ul class="tags">
+                        <li>Tag1</li>
+                        <li>Tag2</li>
+                        <li>Tag3</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="section5">
+            <div class="container">
+                <div class="image"></div>
+                <div class="text">
+                    <h2>Section 5 Heading</h2>
+                    <h3>Subheading 1</h3>
+                    <h4>Subheading 2</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel urna quis neque euismod dapibus.</p>
+                    <p>Nullam ac urna euismod, laoreet tortor sed, fringilla nulla. Aenean in felis id purus tincidunt consectetur.</p>
+                    <p>Integer aliquam est in dolor convallis, ac egestas odio auctor.</p>
+                    <ul class="tags">
+                        <li>Tag1</li>
+                        <li>Tag2</li>
+                        <li>Tag3</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        // Highlight the current section on the sidebar
+        document.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const sidebarLinks = document.querySelectorAll('.sidebar ul li a');
+            let currentSectionIndex = sections.length - 1;
+
+            for (let i = 0; i < sections.length; i++) {
+                const rect = sections[i].getBoundingClientRect();
+                if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+                    currentSectionIndex = i;
+                    break;
+                }
+            }
+
+            sidebarLinks.forEach(link => link.classList.remove('active'));
+            sidebarLinks[currentSectionIndex].classList.add('active');
+        });
+    </script>
+</body>
+</html>

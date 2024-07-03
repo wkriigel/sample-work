@@ -1,0 +1,36 @@
+:root {
+    --color-text: #FFFFFF;
+    --color-bg-hero: #9F9289;
+    --color-border-hero: #74e3ef;
+    --color-tag-hero: #272430;
+    --color-bg-sophos: #013FA3;
+    --color-bg-alt-sophos:#113267;
+    --color-mark-sophos: #1b57b5;
+    --color-mark-fade-sophos: #1b57b5e6;
+    --color-border-sophos: #ffffff;
+    --color-tag-sophos: #002f79;
+    --color-bg-zibasec: #079A63;
+    --color-border-zibasec: #F7C625;
+    --color-tag-zibasec: #0a714a;
+    --color-mark-zibasec: #13a971;
+    --color-mark-fade-zibasec: #13a971e6;
+    --color-bg-georgiatech: #545454;
+    --color-border-georgiatech: #EAAA00;
+    --color-tag-georgiatech: #BD8C05;
+    --color-mark-georgiatech: #7a7a7a;
+    --color-mark-fade-georgiatech: #7a7a7ae6;
+    --color-bg-about: #9F9289;
+    --color-border-about: #74e3ef;
+    --color-bg-footer: #136D8B;
+    --color-border-footer: #c4dae2;
+    --size--xl:2.618em;
+    --size--xxl:4.235em;
+    --size--xs:.272em;
+    --size--m:1em;
+    --size--s:.618em;
+    --size--l:1.618em;
+    --size--xxs:.129em;
+    --size--defaultlineheight:1.272em;
+    --size--display1lineheight:1.129em;
+    --size--bodylineheight:1.618em
+}

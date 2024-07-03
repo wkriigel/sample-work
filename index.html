@@ -14,18 +14,9 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap');
         </style>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-            rel="stylesheet"/>
-        <link rel="stylesheet" href="style.css">
-        <link
-            rel="stylesheet"
-            href="OwlCarousel/assets/owlcarousel/assets/owl.carousel.min.css">
-        <link
-            rel="stylesheet"
-            href="OwlCarousel/assets/owlcarousel/assets/owl.theme.default.min.css">
-        <script src="OwlCarousel/assets/vendors/jquery.min.js"></script>
-        <script src="OwlCarousel/assets/owlcarousel/owl.carousel.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://kit.fontawesome.com/5877a904fb.js" crossorigin="anonymous"></script>
+        <script src="dist/clipboard.min.js"></script>
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -35,167 +26,130 @@
         <div class="main">
             <div class="blocks">
                 <section class="block" id="summary">
-                    <div class="hero">
-                        <h1>William Kriigel</h1>
-                        <p>
-                            <strong>UI/UX Designer with 10+ years of experience</strong><br>
-                            specializing in simplifying cyber security.
-                        </p>
-                        <div class="tags">
-                            <ul>
-                                <li class="background">Dynamic Workflows</li>
-                                <li class="background">Information Architecture</li>
-                                <li class="background">Product Suites</li>
-                                <li class="background">Design Systems</li>
-                                <li class="background">HTML/CSS/JS</li>
-                            </ul>
+                    <div class="hero block-content">
+                        <div>
+                            <h1>William Kriigel</h1>
+                            <p>
+                                <strong>UI/UX Designer with 10+ years of experience</strong><br>
+                                specializing in simplifying cyber security<br>and complex workflows.
+                            </p>
+                            <div class="tags">
+                                <ul>
+                                    <li class="background">S<span style="font-size: 0.925em">aa</span>S / Applications</li>
+                                    <li class="background">Product Suites</li>
+                                    <li class="background">Design Systems</li>
+                                    <li class="background">Information Architecture</li>
+                                    <li class="background">Pattern Integration</li>
+                                </ul>
+                            </div>
+                            <div class="buttons">
+                                <a
+                                    class="btn linkedin"
+                                    target="_blank"
+                                    href="https://www.linkedin.com/in/will-uxui/">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    CONNECT</a>
+                                <div class="email copy-enabled hidden">
+                                    <button class="btn copy" href="#" data-clipboard-text="wkriigel@gmail.com">
+                                        <i class="fa-solid fa-fw fa-copy"></i>
+                                    </button>
+                                    <a class="mailto" href="mailto:wkriigel@gmail.com">wkriigel@gmail.com</a>
+                                </div>
+                                <div class="email copy-disabled">
+                                    <button class="btn" href="mailto:wkriigel@gmail.com">
+                                        <i class="fa-solid fa-fw fa-envelope"></i>
+                                    </button>
+                                    <span>wkriigel@gmail.com</span>
+                                </div>
+                            </div>
                         </div>
-                        <a class="button" target="_blank" href="https://www.linkedin.com/in/will-uxui/">CONNECT</a>
                     </div>
                 </section>
-                <section class="block" id="sophos">
-                    <div class="block-content">
-                        <div class="owl-carousel owl-theme">
-                            <div class="slide"><img class="frame" src="images/sophos01.png"/>
-                                <div class="text">
+                <section id="work">
+                    <div class="block" id="sophos">
+                        <div class="block-content">
+                            <div class="slide"><img class="frame" src="images/sophos01.png"/></div>
+                            <div class="text">
+                                <div class="card">
                                     <h2>
                                         <div class="so"></div>Sophos</h2>
-                                    <h3>Cyber Security Suite</h3>
-                                    <h4>Sr. Software Engineer<br>Security Operations User Experience</h4>
-                                    <p>Designed features for a comprehensive cyber security application used by IT
-                                        professionals.<br>
-                                        Addressed needs such as user created automation workflows, credential
-                                        management, AI-assisted case processing.<br>
-                                        Extended the design system for new functionalities and integrated third-party
-                                        products.<br>
-                                        Streamlined user tasks and journeys based on user research and feedback,
-                                        increasing efficiency, adoption of security best practices, and overall user
-                                        satisfaction.</p>
+                                    <h3>
+                                        Securing Credentials to Bring Users Ease, Power, and Oversight.
+                                    </h3>
+                                    <p>Centralizing the management of API keys, tokens and passwords across a suite
+                                        of cyber security products.</p>
+                                    <!-- <h4>Sr. Software Engineer - SecOps UX, <em>2021-2024</em> </h4> -->
                                     <div class="tags">
                                         <ul>
-                                            <li class="background">Automation Workflows</li>
+                                            <li class="background">Cyber Security Suite</li>
                                             <li class="background">Information Architecture</li>
-                                            <li class="background">Product Suites</li>
+                                            <li class="background">Automation Workflows</li>
                                             <li class="background">Design Systems</li>
-                                            <li class="background">Design Patterns</li>
                                             <li class="background">Wireframes</li>
                                             <li class="background">Prototypes</li>
-                                            <li class="background">HTML/CSS/JS</li>
-                                            <li class="background">AI Integration</li>
-                                            <li class="background software">Figma</li>
-                                            <li class="background software">Adobe XD</li>
-                                            <li class="background software">Storybook</li>
-                                            <li class="background software">Semantic UI</li>
                                         </ul>
+                                    </div>
+                                    <div class="view-more">
+                                        <a class="btn" href="sophos.html">
+                                            VIEW CASE STUDY</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="slide"><img class="frame" src="images/sophos02.png"/>
-                                <div class="text">
-                                    <h3>Optimizing User Created Automation</h3>
-                                    <p>Mapped user tasks and journeys, designed wireframes, and created
-                                        high-fidelity prototypes to guide users through workflows in tools that support
-                                        user-created security automation processes.<br><br>Organized
-                                        object hierarchies to enable intuitive management, including steps, flows,
-                                        scheduling, environments, and hardware.<br><br>Offered
-                                        curated configurations and solutions for third-party software integrations to
-                                        ease onboarding and facilitate learning in a complex system.<br><br>Embed
-                                        documentation into fields, objects, and processes to explain concepts and offer
-                                        guidance in relevant contexts.</p>
-                                </div>
-                            </div>
-                            <div class="slide"><img class="frame" src="images/sophos03.png"/>
-                                <div class="text">
-                                    <h3>AI Challenges</h3>
-                                    <p>Designed tools to iterate on content that was both user provided and system
-                                        sourced.<br><br>Incorporated
-                                        AI generated revisions and simplification across varied data types and display
-                                        locations such as event summaries, table based metrics, and executable code.<br><br>Worked
-                                        with users to find pain points and opportunities to reduce redundant and tedious
-                                        tasks such as initial case descriptions, updates when new data is present, and
-                                        summarizing command line histories.<br><br>Created
-                                        options for users to engage with AI in bulk where they needed it and bypass or
-                                        revert in situations it was not yet suited for.</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                </section>
-                <section class="block" id="zibasec">
-                    <div class="block-content">
-                        <div class="owl-carousel owl-theme">
-                            <div class="slide"><img class="frame" src="images/zibasec01.png"/>
-                                <div class="text">
+                    <div class="block" id="zibasec">
+                        <div class="block-content">
+                            <div class="slide"><img class="frame" src="images/zibasec01.png"/></div>
+                            <div class="text">
+                                <div class="card">
                                     <h2>
                                         <div class="zs"></div>Zibasec</h2>
                                     <h3>Email & SMS Phishing Prevention</h3>
-                                    <h4>User Interface / User Experience Lead</h4>
+                                    <h4>User Interface / User Experience Lead,
+                                        <em>2020-2021</em>
+                                    </h4>
                                     <p>Designed a phishing simulation tool used by government agencies including the
                                         Department of Justice and FBI. Created solutions for features such as reusable
                                         campaigns, email templates, recurring scheduling, and result reports, ensuring
                                         efficient management and continuous employee training. Created visual brand
                                         identity across design elements and implemented unique styling using custom
                                         HTML/CSS components organized within a comprehensive design library. Optimized
-                                        user workflows by adding flexible navigation and modular form sequencing to
-                                        improve overall usability.</p>
+                                        user workflows by adding
+                                        <mark>flexible navigation and modular form sequencing</mark>
+                                        to improve overall usability.</p>
                                     <div class="tags">
-                                        <ul>
+                                        <ul  style="margin: 0">
                                             <li class="background">Dynamic Workflows</li>
-                                            <li class="background">Product Suites</li>
                                             <li class="background">Branding & Identity</li>
                                             <li class="background">Design Systems</li>
                                             <li class="background">Information Architecture</li>
                                             <li class="background">HTML/CSS/JS</li>
-                                            <li class="background software">Figma</li>
-                                            <li class="background software">Storybook</li>
-                                            <li class="background software">Tailwind CSS/UI</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="slide"><img class="frame" src="images/zibasec02.png"/>
-                                <div class="text">
-                                    <h3>Building Modular Campaigns</h3>
-                                    <p>Created an overview feature that summarized modular steps and statuses contained within a campaign. Users had the need to review required
-                                        elements at a glance without having to revisit each object individually. This
-                                        was centered around the concept of a dynamic, readable sentence that explained
-                                        the connection between each component and its status. This design validated each
-                                        step and provided a flexible completion order that a traditional linear wizard
-                                        might not.</p>
-                                </div>
-                            </div>
-                            <div class="slide"><img class="frame" src="images/zibasec03.png"/>
-                                <div class="text">
-                                    <h3>Unique UI Tone</h3>
-                                    <p>
-                                        The PhishTACO app had a need for a fresh approach to its look and feel. A
-                                        cohesive brand visual identity was established featuring bright colors, soft
-                                        shadows, and subtle animations to create a more approachable and standout
-                                        product. Panels, progress bars, alerts, form inputs, buttons, and other UI
-                                        elements each with different states were handcrafted and compiled into a design
-                                        library for engineer use. This styling approach achieved the application's
-                                        memorability and distinctiveness.</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                </section>
-                <section class="block" id="georgiatech">
-                    <div class="block-content">
-                        <div class="owl-carousel owl-theme">
-                            <div class="slide"><img class="frame" src="images/gt01.png"/>
-                                <div class="text">
+                    <div class="block" id="georgiatech">
+                        <div class="block-content">
+                            <div class="slide"><img class="frame" src="images/gt01.png"/></div>
+                            <div class="text">
+                                <div class="card">
                                     <h2>
                                         <div class="gt"></div>Georgia Tech</h2>
                                     <h3>Research Institute - Enterprise Systems</h3>
-                                    <h4>User Interface Developer</h4>
+                                    <h4>User Interface Developer,
+                                        <em>2012-2020</em>
+                                    </h4>
                                     <p>Transformed internal web applications for research contracts, proposals, and
                                         security arrangements by leading the transition to a standardized UI framework,
-                                        developing a design system, and introducing reusable templated components.
-                                        Addressed users' needs for consistent document routing processes and efficient
-                                        cross-linking of cases in an easy to use, intuitive, integrated environment.
-                                        These improvements lead to a marked increase in customer satisfaction and
-                                        product acceptance while significantly improving development efficiency.</p>
+                                        <mark>developing a design system</mark>, and introducing reusable templated
+                                        components. Addressed users' needs for consistent
+                                        <mark>document routing</mark>
+                                        processes and efficient cross-linking of cases in an easy to use, intuitive,
+                                        integrated environment. These improvements lead to a marked increase in customer
+                                        satisfaction and product acceptance while significantly improving
+                                        <mark>development efficiency</mark>.</p>
                                     <div class="tags">
                                         <ul>
                                             <li class="background">Dynamic Workflows</li>
@@ -204,35 +158,8 @@
                                             <li class="background">Wireframes</li>
                                             <li class="background">Prototypes</li>
                                             <li class="background">HTML/CSS/JS</li>
-                                            <li class="background software">Flairbuilder</li>
-                                            <li class="background software">Bootstrap</li>
                                         </ul>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="slide"><img class="frame" src="images/gt02.png"/>
-                                <div class="text">
-                                    <h3>Old vs New</h3>
-                                    <p>
-                                        Designed a new digital system to replace outdated, inconsistent, unscalable
-                                        applications as well as lingering paper processes.<br><br>Developed
-                                            a custom implementation of Bootstrap that featured a unified and consistent
-                                            design, incorporating Georgia Tech branding.<br><br>Enhanced
-                                            user process guidance by providing clear approval status, approver information,
-                                            easy access to attachments, history, related items, and an inbox for managing
-                                            requests and tracking approvals, resulting in streamlined and efficient workflow
-                                            management.</p>
-                                </div>
-                            </div>
-                            <div class="slide"><img class="frame" src="images/gt03.png"/>
-                                <div class="text">
-                                    <h3>Design System Efficiency</h3>
-                                    <p>
-                                        Introduced web components into the engineering process where there was previously low code reusablity and consistancy. Created front-end
-                                        templates for buttons, fields, and pages using HTML, CSS, and Angular.<br><br>
-                                        Developed a well-documented design library for standardized interface usage.<br><br>
-                                        Combined, these lead to drastically faster development, scalability, and improved
-                                            troubleshooting capabilities.</p>
                                 </div>
                             </div>
                         </div>
@@ -240,46 +167,73 @@
                 </section>
                 <section class="block" id="about">
                     <div class="block-content">
-
-                        <div class="slide"><img class="frame" src="images/me.png"/>
-                            <div class="text">
+                        <div class="slide"><img class="frame" src="images/me.png"/></div>
+                        <div class="text">
+                            <div class="card">
                                 <h2>About Me</h2>
-                                <p>With over a decade of UI/UX experience, I've ranged from handling general
-                                    front-end work as a solo designer to specializing in optimizing complex cyber
-                                    security workflows for multi-departmental organizations. My focus is on ensuring
-                                    that every design decision enhances user ease, efficiency, and empathy.<br><br>
-                                    I live near Atlanta, GA, with my wife, two rambunctious black kittens, and two
-                                    spry senior dachshunds. I'm also a competitive powerlifter, actively training
-                                    and participating in local and regional events as well running a small team out
-                                    of my garage gym. By balancing a love for design with my passion for animals and
-                                    fitness, I find joy in both creative and physical challenges.</p>
+                                <p>My UX curiosity started, oddly enough, in the World of Warcraft. I was
+                                    looking for a way to optimize information overload in the chaos of 40
+                                    adventurers fighting for their lives. So I designed custom addons with the goal
+                                    of merging style with peak digestibility to help simplify spell choices,
+                                    resource costs, event timers, and other conditions to maximize monster
+                                    destruction. This initial UX mission was successful as these tools were used by
+                                    tens of thousands of players including world-first teams and Blizzard's game developers.<br><br>
+
+                                    Since then I've transitioned the call of enhancing UI & UX experiences into a career across a
+                                    variety of applications, from handling general design and solo front-end dev
+                                    work, to specializing in optimizing complex cyber security workflows for
+                                    multi-departmental organizations. The breadth of this background gives me
+                                    advantages in understanding engineering limitations as well opportunities for
+                                    development efficiency, but my core motivation remains the same: to simplify everything for
+                                    the user while extending their capabilities.<br><br>
+
+                                    As far as life outside design, I live near Atlanta, GA, with my wife, two
+                                    rambunctious black kittens, and two mischievous senior dachshunds. I'm also a
+                                    competitive powerlifter, actively training and participating in local and
+                                    regional events as well running a small team out of my garage gym.</p>
                             </div>
                         </div>
                     </div>
                 </section>
                 <footer>2024
+                    <a
+                        title="Download Resume"
+                        href="wkriigel_uiux_resume.pdf"
+                        style="font-size:0.8em">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                    </a>
                     <a title="Email" href="mailto:wkriigel@gmail.com">
-                        <span class="material-symbols-outlined">mail</span></a>
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
                     <a
                         title="LinkedIn"
                         target="_blank"
-                        href="https://www.linkedin.com/in/will-uxui/">
-                        <span class="material-symbols-outlined">globe</span></a>
+                        href="https://www.linkedin.com/in/will-uxui/"
+                        style="font-size:0.89em">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
                 </footer>
             </div>
             <nav class="nav">
                 <ul>
                     <li>
-                        <a href="#summary">William Kriigel</a>
+                        <a href="#summary">Connect</a>
                     </li>
-                    <li>
-                        <a href="#sophos">Sophos</a>
+                    <li class="title">
+                        <a href="#work">
+                            <span class="title-text">Work</span></a>
                     </li>
-                    <li>
-                        <a href="#zibasec">Zibasec</a>
+                    <li class="work-item">
+                        <a href="#sophos">
+                            Sophos</a>
                     </li>
-                    <li>
-                        <a href="#georgiatech">Georgia Tech</a>
+                    <li class="work-item">
+                        <a href="#zibasec">
+                            Zibasec</a>
+                    </li>
+                    <li class="work-item">
+                        <a href="#georgiatech">
+                            Georgia Tech</a>
                     </li>
                     <li>
                         <a href="#about">About</a>
@@ -297,6 +251,7 @@
             entries.forEach(entry => {
                 const id = entry
                     .target
+                    .parentElement
                     .getAttribute('id');
                 if (entry.intersectionRatio > 0) {
                     document
@@ -313,21 +268,60 @@
                 }
             });
         });
-
-        // Track all sections that have an `id` applied
         document
-            .querySelectorAll('section[id]')
-            .forEach((section) => {
-                observer.observe(section);
+            .querySelectorAll('.block-content')
+            .forEach((div) => {
+                observer.observe(div);
             });
-
     });
-</script>
-<script>
-    var $btn = ['<span class="    material-symbols-outlined">chevron_left</span>', '<span class="material-symbols-outlined">chevron_right</span>'];
-    $('#sophos .owl-carousel').owlCarousel({items: 1, nav: true, navText: $btn})
-    $('#zibasec .owl-carousel').owlCarousel({items: 1, nav: true, navText: $btn})
-    $('#georgiatech .owl-carousel').owlCarousel(
-        {items: 1, nav: true, navText: $btn}
-    )
+
+    if (ClipboardJS.isSupported()) {
+        document
+            .querySelector(`.copy-disabled`)
+            .classList
+            .add('hidden');
+        document
+            .querySelector(`.copy-enabled`)
+            .classList
+            .remove('hidden');
+    } else {
+        document
+            .querySelector(`.copy-disabled`)
+            .classList
+            .remove('hidden');
+        document
+            .querySelector(`.copy-enabled`)
+            .classList
+            .add('hidden');
+    }
+    var clipboard = new ClipboardJS('.copy');
+
+    clipboard.on('success', function (e) {
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+
+        e.clearSelection();
+        const icon = document.querySelector(`.copy-enabled .btn.copy i`);
+        icon
+            .classList
+            .remove('fa-beat');
+        void icon.offsetWidth;
+        icon
+            .classList
+            .add('fa-beat');
+    });
+
+    clipboard.on('error', function (e) {
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        const icon = document.querySelector(`.copy-enabled .btn.copy i`);
+        icon
+            .classList
+            .remove('fa-shake');
+        void icon.offsetWidth;
+        icon
+            .classList
+            .add('fa-shake');
+    });
 </script>
