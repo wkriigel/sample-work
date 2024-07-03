@@ -1,6 +1,6 @@
 :root {
     --color-text: #FFFFFF;
-    --color-bg-hero: #9F9289;
+    --color-bg-hero: #5e8b98;
     --color-border-hero: #74e3ef;
     --color-tag-hero: #272430;
     --color-bg-sophos: #013FA3;
@@ -22,7 +22,7 @@
     --color-bg-about: #9F9289;
     --color-border-about: #74e3ef;
     --color-bg-footer: #136D8B;
-    --color-border-footer: #c4dae2;
+    --color-border-footer: #ededed;
     --size--xl:2.618em;
     --size--xxl:4.235em;
     --size--xs:.272em;
