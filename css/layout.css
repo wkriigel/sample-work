@@ -47,7 +47,7 @@ h3 {
   margin: 0 0 var(--size--l);
 }
 h4 {
-  font-size: clamp(0.667rem, 1vw + 0.125rem, 1rem);
+  font-size: clamp(0.667rem, 1vw + 0.125rem, 1.25rem);
   margin: 0 0 var(--size--m);
 }
 .detail .label,
@@ -292,7 +292,7 @@ mark {
     margin: 0 0 1.5rem;
   }
   h4 {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
   h4 em {
     font-size: 0.8em;
