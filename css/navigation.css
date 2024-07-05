@@ -29,34 +29,19 @@ nav li {
   border-left-color: transparent;
   padding-left: 1rem;
 }
-li.work-item {
+.home li.work-item {
   border-left-width: 0.33rem;
   margin-left: 0.66rem;
+}
+li.work-item {
+  border-left-width: 0.33rem;
 }
 nav li.title:has(~ li.work-item.active) + .work-item,
 nav li.title:has(~ li.work-item.active) + .work-item + .work-item,
 nav li.title:has(~ li.work-item.active) + .work-item + .work-item + .work-item,
-nav
-  li.title:has(~ li.work-item.active)
-  + .work-item
-  + .work-item
-  + .work-item
-  + .work-item,
-nav
-  li.title:has(~ li.work-item.active)
-  + .work-item
-  + .work-item
-  + .work-item
-  + .work-item
-  + .work-item,
-nav
-  li.title:has(~ li.work-item.active)
-  + .work-item
-  + .work-item
-  + .work-item
-  + .work-item
-  + .work-item
-  + .work-item {
+nav li.title:has(~ li.work-item.active) + .work-item + .work-item + .work-item + .work-item,
+nav li.title:has(~ li.work-item.active) + .work-item + .work-item + .work-item + .work-item + .work-item,
+nav li.title:has(~ li.work-item.active) + .work-item + .work-item + .work-item + .work-item + .work-item + .work-item {
   border-left-color: rgba(255, 255, 255, 0.05);
 }
 nav li.active.work-item {
@@ -91,7 +76,7 @@ nav li.nav-back a i {
 nav li.nav-back {
   padding-left: 0;
   margin-left: -0.33rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #54515b;
+  border-bottom: 1px solid #54515b; */
 }

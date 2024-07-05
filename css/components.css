@@ -5,8 +5,7 @@ mark {
 }
 hr {
   color: var(--color-text);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 .tags ul li {
   text-transform: uppercase;
@@ -18,11 +17,20 @@ hr {
   box-shadow: rgba(7, 109, 140, 0.05) 0 22px 70px 4px;
   filter: brightness(1.075);
 }
+.detail {
+  border-radius: 6px;
+  background-color: #ffffff08;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+.detail > div {
+}
+.detail > div:has(+ div + div) {
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
 .caption {
   border-radius: 3px;
   transform: skew(-14deg);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   filter: brightness(1.075);
   padding: 0.25rem 1rem;
   width: fit-content;
@@ -43,11 +51,7 @@ footer a:hover {
 }
 .block#summary {
   background-size: 1rem 1rem;
-  background-image: radial-gradient(
-    circle,
-    #c2b3a959 1px,
-    rgba(0, 0, 0, 0) 1px
-  );
+  background-image: radial-gradient(circle, #c2b3a959 1px, rgba(0, 0, 0, 0) 1px);
   background-color: var(--color-bg-hero);
   border-left-color: var(--color-border-hero);
 }
@@ -89,12 +93,9 @@ footer a:hover {
 }
 #sophos .block mark,
 .block#sophos mark {
-  background: linear-gradient(
-    346deg,
-    var(--color-mark-fade-sophos) 0%,
-    var(--color-mark-sophos) 50%,
-    var(--color-mark-fade-sophos) 100%
-  );
+  background: linear-gradient(346deg, var(--color-mark-fade-sophos) 0%, var(--color-mark-sophos) 50%, var(--color-mark-fade-sophos) 100%);
+  /* background: radial-gradient(at 2em 8%, var(--color-mark-sophos), var(--color-mark-fade-sophos) 75%, #ffffff00 85%); */
+  text-shadow: var(--color-mark-sophos) 0 14px 14px, var(--color-mark-sophos) -4px 0px 20px;
 }
 #sophos .block .tags li,
 #sophos .caption,
@@ -119,6 +120,8 @@ footer a:hover {
     var(--color-mark-zibasec) 50%,
     var(--color-mark-fade-zibasec) 100%
   );
+  /* background: radial-gradient(at 2em 8%, var(--color-mark-zibasec), var(--color-mark-fade-zibasec) 75%, #ffffff00 85%); */
+  text-shadow: var(--color-mark-zibasec) 0 14px 14px, var(--color-mark-zibasec) -4px 0px 20px;
 }
 .block#zibasec .tags li {
   background-color: var(--color-tag-zibasec);
@@ -138,7 +141,8 @@ footer a:hover {
 .block#georgiatech .btn {
   color: var(--color-bg-georgiatech);
 }
-#georigiatech .blcok .btn:hover .block#georgiatech .btn:hover {
+#georigiatech .block .btn:hover,
+.block#georgiatech .btn:hover {
   outline-color: var(--color-tag-georgiatech);
 }
 #georgiatech .block mark,
@@ -149,6 +153,8 @@ footer a:hover {
     var(--color-mark-georgiatech) 50%,
     var(--color-mark-fade-georgiatech) 100%
   );
+  /* background: radial-gradient(at 2em 8%, var(--color-mark-georgiatech), var(--color-mark-fade-georgiatech) 75%, #ffffff00 85%); */
+  text-shadow: var(--color-mark-georgiatech) 0 14px 14px, var(--color-mark-georgiatech) -4px 0px 20px;
 }
 #georgiatech .block .tags li,
 #georgiatech .caption,
@@ -160,13 +166,20 @@ footer a:hover {
   background-color: var(--color-bg-about);
   border-left-color: var(--color-border-about);
 }
+#about .block mark,
+.block#about mark {
+  background: linear-gradient(346deg, var(--color-mark-fade-about) 0%, var(--color-mark-about) 50%, var(--color-mark-fade-about) 100%);
+  /* background: radial-gradient(at 2em 8%, var(--color-mark-about), var(--color-mark-fade-about) 75%, #ffffff00 85%); */
+  text-shadow: var(--color-mark-about) 0 14px 14px, var(--color-mark-about) -4px 0px 20px;
+}
+
+/* org images */
 .block .gt,
 .block .so,
 .block .zs {
   border-radius: 12px;
   display: inline-block;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 .block .so {
   background: url("../images/so.png") no-repeat center / cover;

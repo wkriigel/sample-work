@@ -50,6 +50,18 @@ h4 {
   font-size: clamp(0.667rem, 1vw + 0.125rem, 1rem);
   margin: 0 0 var(--size--m);
 }
+.detail .label,
+.detail .value {
+  font-size: clamp(0.667rem, 1vw + 0.125rem, 0.9rem);
+  padding: 0.9em 0;
+}
+.detail .label {
+  font-weight: 500;
+  padding-inline: 1.65em;
+}
+.detail .value {
+  padding-inline: 1.65em;
+}
 h4 em {
   font-size: 0.8em;
   font-size: clamp(0.5rem, 1vw + 0.25rem, 0.833rem);
@@ -57,6 +69,9 @@ h4 em {
 }
 .text p {
   margin: 0 0 var(--size--xl);
+}
+.text p:has(+ .detail) {
+  margin: 0 0 var(--size--xxl);
 }
 .text p:has(+ p) {
   margin: 0 0 var(--size--l);
@@ -76,7 +91,7 @@ h4 em {
   font-size: clamp(0.667rem, 1vw + 0.125rem, 1rem);
 }
 .work .text {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 .work .block-content {
@@ -160,6 +175,12 @@ hr {
   display: flex;
   flex-direction: column;
 }
+.detail {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: fit-content;
+  margin: 0 auto;
+}
 .case-title > h2 {
   margin: 0;
 }
@@ -169,7 +190,7 @@ hr {
   margin: 0 auto;
 }
 .text {
-  min-width: 50ch;
+  min-width: 70ch;
   max-width: 70ch;
   margin-top: 5rem;
   padding: 0.4rem;
@@ -249,6 +270,7 @@ section {
 }
 mark {
   padding: 0 2px;
+  /* border-radius: 1px 0.125em 0.5em 0; */
 }
 .block {
   border-left-width: 1rem;
@@ -274,6 +296,9 @@ mark {
   }
   h4 em {
     font-size: 0.8em;
+  }
+  .detail .label {
+    font-size: 0.9rem;
   }
   .text p {
     font-size: 1rem;
