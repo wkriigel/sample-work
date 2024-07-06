@@ -214,6 +214,9 @@ hr {
 .card p {
   margin: 0 0 var(--size--l);
 }
+.card p:has(+ p) {
+  margin: 0 0 var(--size--m);
+}
 .card ul {
   margin: 0 0 var(--size--xl);
 }
