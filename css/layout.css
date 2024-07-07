@@ -146,6 +146,9 @@ hr {
 .work .block .frame {
   margin: 0 auto var(--size--xl);
 }
+.work .block .frame:has(+ .caption) {
+  margin: 0 auto var(--size--xs);
+}
 .work .caption {
   margin: 0 auto var(--size--xl);
 }
@@ -175,10 +178,11 @@ hr {
   display: flex;
   flex-direction: column;
 }
+
 .detail {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  width: fit-content;
+  /* width: fit-content; */
   margin: 0 auto;
 }
 .case-title > h2 {
@@ -283,6 +287,17 @@ mark {
   margin: 0 0 1.125rem;
 }
 
+@media only screen and (min-width: 2500px) {
+  .work .case-title.block-content {
+    margin: 1em 0 2em 0;
+  }
+  .work .case-title .text {
+    padding-top: 6rem;
+  }
+  .work .case-title .slide {
+    min-width: 50%;
+  }
+}
 @media only screen and (min-width: 2100px) {
   h1 {
     font-size: 10rem;
