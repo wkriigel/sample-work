@@ -103,16 +103,25 @@ footer a:hover {
   background-color: var(--color-tag-sophos);
 }
 /* ZS */
+#zibasec .block:nth-child(even),
+#zibasec section.block,
 .block#zibasec {
   background-color: var(--color-bg-zibasec);
   border-left-color: var(--color-border-zibasec);
 }
+#zibasec .block {
+  background-color: var(--color-bg-alt-zibasec);
+  border-left-color: var(--color-border-zibasec);
+}
+#zibasec .block .btn,
 .block#zibasec .btn {
   color: var(--color-bg-zibasec);
 }
+#zibasec .block .btn:hover,
 .block#zibasec .btn:hover {
   outline-color: var(--color-tag-zibasec);
 }
+#zibasec .block mark,
 .block#zibasec mark {
   background: linear-gradient(
     346deg,
@@ -123,6 +132,8 @@ footer a:hover {
   /* background: radial-gradient(at 2em 8%, var(--color-mark-zibasec), var(--color-mark-fade-zibasec) 75%, #ffffff00 85%); */
   text-shadow: var(--color-mark-zibasec) 0 14px 14px, var(--color-mark-zibasec) -4px 0px 20px;
 }
+#zibasec .block .tags li,
+/* #zibasec .caption, */
 .block#zibasec .tags li {
   background-color: var(--color-tag-zibasec);
 }
